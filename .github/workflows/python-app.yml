@@ -13,9 +13,9 @@ env:
   GAR_LOCATION: us-central1
   GKE_CLUSTER: autopilot-cluster-1
   GKE_ZONE: us-central1
-  DEPLOYMENT_NAME: py-test
-  REPOSITORY: test-gke
-  IMAGE: static-site
+  DEPLOYMENT_NAME: fastapi-simple
+  REPOSITORY: fastapi-simple
+  IMAGE: fastapi-simple
 
 jobs:
   setup-build-publish-deploy:
