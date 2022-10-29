@@ -6,13 +6,10 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
+#Add simple function to add 2 integers
 @app.get("/add")
 async def addition(x:int, y:int):
     return {
         "data": x + y,
         "message": "success",
     }
-
-@app.get("/ready")
-async def readiness_probe():
-    return {"message": "success"}
