@@ -10,6 +10,6 @@ async def root():
 @app.get("/add")
 async def addition(x:int, y:int):
     return {
-        "data": x - y,
+        "data": x + y,
         "message": "success",
     }
