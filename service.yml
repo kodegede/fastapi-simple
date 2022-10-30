@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: fastapi-simple-service
   annotations:
+    #add ingress to the service
     cloud.google.com/neg: '{"ingress": true}'
 spec:
   type: LoadBalancer
